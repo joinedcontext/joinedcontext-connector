@@ -1,4 +1,4 @@
-# joinedcontext open data connector
+# Joinedcontext Open Data connector
 
 A remote MCP connector and plugin that lets Claude, ChatGPT and Codex search and read the open data that Slovak and other European cities and regions publish on the joinedcontext platform: air quality, transport, schools, points of interest, sensor history, and the publishers' own web pages.
 
@@ -15,7 +15,7 @@ A remote MCP connector and plugin that lets Claude, ChatGPT and Codex search and
 
 ## Add it to Claude
 
-**For the whole organization (Team or Enterprise):** an Owner opens **Admin settings → Connectors → Add custom connector**, names it `joinedcontext open data` and pastes the server URL. Every member then finds it under **Settings → Connectors** and turns it on. Nobody logs in.
+**For the whole organization (Team or Enterprise):** an Owner opens **Admin settings → Connectors → Add custom connector**, names it `Joinedcontext Open Data` and pastes the server URL. Every member then finds it under **Settings → Connectors** and turns it on. Nobody logs in.
 
 **For yourself (Pro or Max):** **Settings → Connectors → Add custom connector**, the same name and URL.
 

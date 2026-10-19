@@ -28,7 +28,7 @@ The repository is public at `github.com/marek-mraz/joinedcontext-connector`. The
 
 ### 2.1 Everyone in our organization, today
 
-**Admin settings → Connectors → Add custom connector**: name `joinedcontext open data`, URL `https://api.smartcity.joinedcontext.com/api/mcp`. Members turn it on under **Settings → Connectors**. Nobody logs in.
+**Admin settings → Connectors → Add custom connector**: name `Joinedcontext Open Data`, URL `https://api.smartcity.joinedcontext.com/api/mcp`. Members turn it on under **Settings → Connectors**. Nobody logs in.
 
 ### 2.2 Claude Code users, today
 

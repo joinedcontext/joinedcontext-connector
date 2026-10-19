@@ -13,11 +13,11 @@ The portal syncs the 18 tools from the server. All 18 are read-only. If any tool
 
 ## Listing
 
-- Server name: `joinedcontext open data`
+- Server name: `Joinedcontext Open Data`
 - One-liner (200 characters max): `Search and read open data from European cities and regions: air quality, transport, schools, places, sensor history and the publishers' own pages.`
 - Description (2,000 characters max):
 
-  > joinedcontext open data connects Claude to the open data that cities and regions publish on the joinedcontext platform, starting with Banská Bystrica, the Banská Bystrica Self-Governing Region, Žilina, Prague and Helsinki.
+  > Joinedcontext Open Data connects Claude to the open data that cities and regions publish on the joinedcontext platform, starting with Banská Bystrica, the Banská Bystrica Self-Governing Region, Žilina, Prague and Helsinki.
   >
   > Ask in English or Slovak. Claude finds the right dataset, reads the current values or their history, and cites the publisher. It can search air quality, public transport stops and timetables, schools, points of interest, bridges, indicators and sensor history, filter by place and time, and search the publishers' own announcements and pages.
   >

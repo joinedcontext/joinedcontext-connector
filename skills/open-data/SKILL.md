@@ -3,7 +3,7 @@ name: open-data
 description: Answer questions about city and regional open data (air quality, transport, schools, places, sensors, history, publishers' announcements) for Banská Bystrica, the Banská Bystrica region, Žilina, Prague and Helsinki with the joinedcontext MCP tools. Use when the user asks about such data or wants a script that downloads it.
 ---
 
-# joinedcontext open data
+# Joinedcontext Open Data
 
 1. Start with the `search` tool: put the question in `query` (Slovak or English), narrow with `place`, `domain` or `type`.
 2. Each hit names its Endpoint and a `nextQuery`: call that tool with those arguments to read the values.

@@ -10,9 +10,9 @@
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {
-    "displayName": "joinedcontext open data",
+    "displayName": "Joinedcontext Open Data",
     "shortDescription": "City and regional open data",
-    "longDescription": "joinedcontext open data connects ChatGPT to the open data that cities and regions publish on the joinedcontext platform, starting with Banská Bystrica, the Banská Bystrica Self-Governing Region, Žilina, Prague and Helsinki. Ask in English or Slovak: it finds the right dataset, reads current values or their history, and cites the publisher. It covers air quality, public transport stops, schools, points of interest, bridges, indicators and sensor history, and searches the publishers' own announcements and pages. Every tool is read-only and returns only what a publisher released as open data. No account and no login.",
+    "longDescription": "Joinedcontext Open Data connects ChatGPT to the open data that cities and regions publish on the joinedcontext platform, starting with Banská Bystrica, the Banská Bystrica Self-Governing Region, Žilina, Prague and Helsinki. Ask in English or Slovak: it finds the right dataset, reads current values or their history, and cites the publisher. It covers air quality, public transport stops, schools, points of interest, bridges, indicators and sensor history, and searches the publishers' own announcements and pages. Every tool is read-only and returns only what a publisher released as open data. No account and no login.",
     "developerName": "joinedcontext",
     "category": "Research",
     "capabilities": [],
