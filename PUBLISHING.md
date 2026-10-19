@@ -54,9 +54,17 @@ The plugin brings the MCP server and the `open-data` skill. To make it the defau
 2. Paste the answers from `SUBMISSION.md` step by step and upload `assets/icon.png`.
 3. Submit. Anthropic scans the server and lists it as a Community connector. Status and reviewer feedback appear in the same portal; escalations go to <mcp-review@anthropic.com>.
 
-### 2.4 The plugin directory (optional)
+### 2.4 The plugin directory
 
-In the same portal choose **Submit new → Plugin** and give this repository. The connector listing (2.3) and the plugin can be paired there.
+In the same portal choose **Submit new → Plugin bundle**:
+
+1. **Source**: repository `marek-mraz/joinedcontext-connector`, plugin path empty (the plugin is at the root), branch empty (follows `main`). Select **Validate** and fix anything marked **Blocking**, then **Re-validate**.
+2. **Listing details**: the portal reads name, icon and the four URLs from `.claude-plugin/plugin.json`; the README becomes the description.
+3. **Data handling**: our own API, open data only, no personal health data, no sponsored content.
+4. **Compliance**: accept the acknowledgments.
+5. **Review and submit**.
+
+The connector listing (2.3) and the plugin can be paired there.
 
 ## 3. ChatGPT and Codex
 
@@ -76,10 +84,10 @@ OpenAI's Plugins Directory serves ChatGPT and Codex from one submission.
 ### 3.3 Package
 
 ```bash
-git archive --format=zip -o joinedcontext-open-data-1.0.0.zip HEAD
+git archive --format=zip -o joinedcontext-open-data-1.0.0.zip HEAD .codex-plugin .mcp.json skills assets/icon.png README.md LICENSE
 ```
 
-`.gitattributes` leaves the CI, the check and the submission notes out of the ZIP. Raise `version` in both `plugin.json` files before each new upload.
+The path list keeps the CI, the check and the submission notes out of the ZIP. (`.gitattributes` `export-ignore` would do the same, but Anthropic's plugin validator refuses a repository that uses it.) Raise `version` in both `plugin.json` files before each new upload.
 
 ### 3.4 Submit
 
