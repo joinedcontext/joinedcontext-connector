@@ -9,7 +9,7 @@
     "url": "https://joinedcontext.com"
   },
   "homepage": "https://opendata.smartcity.joinedcontext.com/en/connector",
-  "repository": "https://github.com/marek-mraz-jc/joinedcontext-connector",
+  "repository": "https://github.com/marek-mraz/joinedcontext-connector",
   "license": "MIT",
   "keywords": [
     "open-data",

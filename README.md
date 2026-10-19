@@ -22,7 +22,7 @@ A remote MCP connector and plugin that lets Claude, ChatGPT and Codex search and
 **Claude Code, as a plugin (MCP server plus a usage skill):**
 
 ```bash
-/plugin install joinedcontext-open-data --marketplace marek-mraz-jc/joinedcontext-connector
+/plugin install joinedcontext-open-data --marketplace marek-mraz/joinedcontext-connector
 ```
 
 **Claude Code, the server only:**

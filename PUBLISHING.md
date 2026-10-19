@@ -22,7 +22,7 @@ One repository holds everything for both stores:
 
 ## 1. GitHub
 
-The repository is public at `github.com/marek-mraz-jc/joinedcontext-connector`. The `check` workflow runs `check.py` on every push and once a day, so a broken server shows as a red badge before a reviewer finds it.
+The repository is public at `github.com/marek-mraz/joinedcontext-connector`. The `check` workflow runs `check.py` on every push and once a day, so a broken server shows as a red badge before a reviewer finds it.
 
 ## 2. Claude
 
@@ -33,7 +33,7 @@ The repository is public at `github.com/marek-mraz-jc/joinedcontext-connector`. 
 ### 2.2 Claude Code users, today
 
 ```bash
-/plugin marketplace add marek-mraz-jc/joinedcontext-connector
+/plugin marketplace add marek-mraz/joinedcontext-connector
 /plugin install joinedcontext-open-data@joinedcontext
 ```
 
@@ -42,7 +42,7 @@ The plugin brings the MCP server and the `open-data` skill. To make it the defau
 ```json
 {
   "extraKnownMarketplaces": {
-    "joinedcontext": { "source": { "source": "github", "repo": "marek-mraz-jc/joinedcontext-connector" } }
+    "joinedcontext": { "source": { "source": "github", "repo": "marek-mraz/joinedcontext-connector" } }
   },
   "enabledPlugins": { "joinedcontext-open-data@joinedcontext": true }
 }
@@ -58,7 +58,7 @@ The plugin brings the MCP server and the `open-data` skill. To make it the defau
 
 In the same portal choose **Submit new → Plugin bundle**:
 
-1. **Source**: repository `marek-mraz-jc/joinedcontext-connector`, plugin path empty (the plugin is at the root), branch empty (follows `main`). Select **Validate** and fix anything marked **Blocking**, then **Re-validate**.
+1. **Source**: repository `marek-mraz/joinedcontext-connector`, plugin path empty (the plugin is at the root), branch empty (follows `main`). Select **Validate** and fix anything marked **Blocking**, then **Re-validate**.
 2. **Listing details**: the portal reads name, icon and the four URLs from `.claude-plugin/plugin.json`; the README becomes the description.
 3. **Data handling**: our own API, open data only, no personal health data, no sponsored content.
 4. **Compliance**: accept the acknowledgments.
