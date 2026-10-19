@@ -26,7 +26,7 @@ The portal syncs the 18 tools from the server. All 18 are read-only. If any tool
 - Documentation URL: `https://opendata.smartcity.joinedcontext.com/en/connector`
 - Privacy policy URL: `https://opendata.smartcity.joinedcontext.com/en/privacy`
 - Support contact: `hello@joinedcontext.com`
-- Icon: `assets/icon.png` (512 × 512 PNG)
+- Icon: the joinedcontext logo in the `assets` folder (512 × 512 PNG)
 - URL slug (permanent): `joinedcontext-open-data`
 
 ## Use cases

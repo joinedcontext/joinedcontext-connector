@@ -70,7 +70,7 @@ The GitHub workflow runs it on every push and once a day.
 
 ## Submit
 
-[PUBLISHING.md](PUBLISHING.md) is the step-by-step manual for Claude and ChatGPT. [SUBMISSION.md](SUBMISSION.md) holds every answer the developer portal at <https://claude.ai/directory/manage> asks for, and [assets/icon.png](assets/icon.png) the icon.
+[PUBLISHING.md](PUBLISHING.md) is the step-by-step manual for Claude and ChatGPT. [SUBMISSION.md](SUBMISSION.md) holds every answer the developer portal at <https://claude.ai/directory/manage> asks for.
 
 ## Privacy
 

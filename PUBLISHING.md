@@ -9,7 +9,7 @@ One repository holds everything for both stores:
 | `.claude-plugin/marketplace.json` | makes this repo a plugin marketplace | |
 | `.codex-plugin/plugin.json` | | plugin manifest with the store listing (`interface`) |
 | `skills/open-data/SKILL.md` | how to use the tools well | the same skill |
-| `assets/icon.png` | directory icon | logo and composer icon |
+| the `assets` folder | directory icon (the logo, 512 × 512 PNG) | logo and composer icon |
 | `SUBMISSION.md` | answers for the Claude directory portal | |
 | `openai-test-cases.json` | | the 5 positive and 3 negative review cases |
 | `check.py` | the directory rules, tested against the live server | the same |
@@ -51,7 +51,7 @@ The plugin brings the MCP server and the `open-data` skill. To make it the defau
 ### 2.3 The public Connectors Directory
 
 1. Open <https://claude.ai/directory/manage>, then **Submit new → MCP connector**. Any paid plan can submit.
-2. Paste the answers from `SUBMISSION.md` step by step and upload `assets/icon.png`.
+2. Paste the answers from `SUBMISSION.md` step by step and upload the logo from the `assets` folder.
 3. Submit. Anthropic scans the server and lists it as a Community connector. Status and reviewer feedback appear in the same portal; escalations go to <mcp-review@anthropic.com>.
 
 ### 2.4 The plugin directory
@@ -84,7 +84,7 @@ OpenAI's Plugins Directory serves ChatGPT and Codex from one submission.
 ### 3.3 Package
 
 ```bash
-git archive --format=zip -o joinedcontext-open-data-1.0.0.zip HEAD .codex-plugin .mcp.json skills assets/icon.png README.md LICENSE
+git archive --format=zip -o joinedcontext-open-data-1.0.0.zip HEAD .codex-plugin .mcp.json skills assets README.md LICENSE
 ```
 
 The path list keeps the CI, the check and the submission notes out of the ZIP. (`.gitattributes` `export-ignore` would do the same, but Anthropic's plugin validator refuses a repository that uses it.) Raise `version` in both `plugin.json` files before each new upload.
