@@ -1,5 +1,7 @@
 # Joinedcontext Open Data connector
 
+> **Status: in preparation.** The connector works today as a custom connector, but it is not yet published in the Claude or ChatGPT directories. Directory submissions are under review.
+
 A remote MCP connector and plugin that lets Claude, ChatGPT and Codex search and read the open data that Slovak and other European cities and regions publish on the joinedcontext platform: air quality, transport, schools, points of interest, sensor history, and the publishers' own web pages.
 
 | | |
