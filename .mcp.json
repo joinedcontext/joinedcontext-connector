@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "joinedcontext": {
+      "type": "http",
+      "url": "https://api.smartcity.joinedcontext.com/api/mcp"
+    }
+  }
+}

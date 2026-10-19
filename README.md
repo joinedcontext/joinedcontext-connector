@@ -1,6 +1,6 @@
-# joinedcontext open data — Claude connector
+# joinedcontext open data connector
 
-A remote MCP connector that lets Claude search and read the open data that Slovak and other European cities and regions publish on the joinedcontext platform: air quality, transport, schools, points of interest, sensor history, and the publishers' own web pages.
+A remote MCP connector and plugin that lets Claude, ChatGPT and Codex search and read the open data that Slovak and other European cities and regions publish on the joinedcontext platform: air quality, transport, schools, points of interest, sensor history, and the publishers' own web pages.
 
 | | |
 |---|---|
@@ -19,7 +19,14 @@ A remote MCP connector that lets Claude search and read the open data that Slova
 
 **For yourself (Pro or Max):** **Settings → Connectors → Add custom connector**, the same name and URL.
 
-**Claude Code:**
+**Claude Code, as a plugin (MCP server plus a usage skill):**
+
+```bash
+/plugin marketplace add marek-mraz/joinedcontext-connector
+/plugin install joinedcontext-open-data@joinedcontext
+```
+
+**Claude Code, the server only:**
 
 ```bash
 claude mcp add --transport http joinedcontext https://api.smartcity.joinedcontext.com/api/mcp
@@ -64,7 +71,7 @@ The GitHub workflow runs it on every push and once a day.
 
 ## Submit
 
-[SUBMISSION.md](SUBMISSION.md) holds every answer the developer portal at <https://claude.ai/directory/manage> asks for, and [assets/icon.png](assets/icon.png) the icon.
+[PUBLISHING.md](PUBLISHING.md) is the step-by-step manual for Claude and ChatGPT. [SUBMISSION.md](SUBMISSION.md) holds every answer the developer portal at <https://claude.ai/directory/manage> asks for, and [assets/icon.png](assets/icon.png) the icon.
 
 ## Privacy
 

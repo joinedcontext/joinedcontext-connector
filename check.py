@@ -47,7 +47,7 @@ def main():
         init = rpc("initialize", {
             "protocolVersion": "2025-06-18",
             "capabilities": {},
-            "clientInfo": {"name": "joinedcontext-claude-connector-check", "version": "1"},
+            "clientInfo": {"name": "joinedcontext-connector-check", "version": "1"},
         })
     except urllib.error.HTTPError as e:
         check("initialize without a token (no OAuth needed for open data)", False, f"HTTP {e.code}")
@@ -61,8 +61,9 @@ def main():
         ann = t.get("annotations", {})
         title = t.get("title") or ann.get("title")
         check(f"tool {t['name']}: title", bool(title), title or "missing")
-        check(f"tool {t['name']}: readOnlyHint or destructiveHint",
-              "readOnlyHint" in ann or "destructiveHint" in ann)
+        # Claude needs one of the two hints; ChatGPT needs all three as explicit booleans.
+        for hint in ("readOnlyHint", "destructiveHint", "openWorldHint"):
+            check(f"tool {t['name']}: {hint}", isinstance(ann.get(hint), bool))
         check(f"tool {t['name']}: name at most 64 characters", len(t["name"]) <= 64)
     check("tool titles are unique",
           len({t.get("title") or t.get("annotations", {}).get("title") for t in tools}) == len(tools))

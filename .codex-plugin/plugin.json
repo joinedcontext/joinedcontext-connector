@@ -1,0 +1,32 @@
+{
+  "name": "joinedcontext-open-data",
+  "version": "1.0.0",
+  "description": "Search and read open data from European cities and regions through the joinedcontext MCP server. Read-only, no account.",
+  "author": { "name": "joinedcontext", "email": "hello@joinedcontext.com", "url": "https://joinedcontext.com" },
+  "homepage": "https://opendata.smartcity.joinedcontext.com/en/connector",
+  "repository": "https://github.com/marek-mraz/joinedcontext-connector",
+  "license": "MIT",
+  "keywords": ["open-data", "mcp", "smart-city", "air-quality", "transport"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "joinedcontext open data",
+    "shortDescription": "City and regional open data",
+    "longDescription": "joinedcontext open data connects ChatGPT to the open data that cities and regions publish on the joinedcontext platform, starting with Banská Bystrica, the Banská Bystrica Self-Governing Region, Žilina, Prague and Helsinki. Ask in English or Slovak: it finds the right dataset, reads current values or their history, and cites the publisher. It covers air quality, public transport stops, schools, points of interest, bridges, indicators and sensor history, and searches the publishers' own announcements and pages. Every tool is read-only and returns only what a publisher released as open data. No account and no login.",
+    "developerName": "joinedcontext",
+    "category": "Research",
+    "capabilities": [],
+    "websiteURL": "https://opendata.smartcity.joinedcontext.com/en/connector",
+    "supportURL": "https://opendata.smartcity.joinedcontext.com/en/support",
+    "privacyPolicyURL": "https://opendata.smartcity.joinedcontext.com/en/privacy",
+    "termsOfServiceURL": "https://opendata.smartcity.joinedcontext.com/en/terms",
+    "defaultPrompt": [
+      "Which air-quality datasets exist for Banská Bystrica? Show the latest readings.",
+      "List the open-data endpoints you can read and what each one holds.",
+      "What did the region announce about road closures? Quote the source page."
+    ],
+    "brandColor": "#2E3D9C",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png"
+  }
+}

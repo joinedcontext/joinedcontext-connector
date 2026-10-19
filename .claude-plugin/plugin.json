@@ -1,0 +1,10 @@
+{
+  "name": "joinedcontext-open-data",
+  "version": "1.0.0",
+  "description": "Search and read open data from European cities and regions (air quality, transport, schools, places, sensor history, publishers' pages) through the joinedcontext MCP server. Read-only, no account.",
+  "author": { "name": "joinedcontext", "email": "hello@joinedcontext.com", "url": "https://joinedcontext.com" },
+  "homepage": "https://opendata.smartcity.joinedcontext.com/en/connector",
+  "repository": "https://github.com/marek-mraz/joinedcontext-connector",
+  "license": "MIT",
+  "keywords": ["open-data", "mcp", "ngsi-ld", "smart-city", "air-quality", "transport"]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "joinedcontext",
+  "owner": {
+    "name": "joinedcontext",
+    "email": "hello@joinedcontext.com"
+  },
+  "description": "joinedcontext plugins for Claude Code: open data from European cities and regions.",
+  "plugins": [
+    {
+      "name": "joinedcontext-open-data",
+      "source": "./",
+      "description": "Open data from European cities and regions through the joinedcontext MCP server. Read-only, no account."
+    }
+  ]
+}

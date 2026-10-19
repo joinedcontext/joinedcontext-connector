@@ -1,0 +1,39 @@
+{
+  "positive": [
+    {
+      "description": "Finds air-quality datasets for a city and reads a current value",
+      "prompt": "Which air-quality datasets exist for Banská Bystrica? Show the latest PM10 reading.",
+      "tools_triggered": ["search", "query_entities"],
+      "expected_behavior": "Names 'Air quality in Banská Bystrica' and gives a PM10 value in µg/m³ with its station and observation time."
+    },
+    {
+      "description": "Lists the readable data endpoints",
+      "prompt": "List the open-data endpoints you can read and what types each one holds.",
+      "tools_triggered": ["list_endpoints"],
+      "expected_behavior": "Returns endpoints with their titles and entity types, such as AirQualityObserved, GtfsStop and PointOfInterest."
+    },
+    {
+      "description": "Searches a publisher's own pages",
+      "prompt": "What did Banská Bystrica announce about traffic and road closures? Quote the source page.",
+      "tools_triggered": ["search_documents"],
+      "expected_behavior": "Quotes announcements from the publisher's pages and names the publisher and page."
+    },
+    {
+      "description": "Reads the history of a measurement",
+      "prompt": "How did PM10 in Banská Bystrica change over the last 7 days?",
+      "tools_triggered": ["search", "query_temporal"],
+      "expected_behavior": "Summarizes PM10 values over the period with dates, from the air-quality dataset."
+    },
+    {
+      "description": "Describes one endpoint in full",
+      "prompt": "What can I read from the Žilina open-data endpoint, and what is its NGSI-LD URL?",
+      "tools_triggered": ["search", "get_endpoint"],
+      "expected_behavior": "Lists the endpoint's types and attributes and gives its surface URLs."
+    }
+  ],
+  "negative": [
+    { "description": "Arithmetic unrelated to open data", "prompt": "What is 4 + 4?" },
+    { "description": "Creative writing", "prompt": "Write a poem about autumn." },
+    { "description": "A booking the connector cannot do", "prompt": "Book me a train ticket from Bratislava to Košice for tomorrow." }
+  ]
+}
