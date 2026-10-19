@@ -4,7 +4,7 @@
   "description": "Search and read open data from European cities and regions through the joinedcontext MCP server. Read-only, no account.",
   "author": { "name": "joinedcontext", "email": "hello@joinedcontext.com", "url": "https://joinedcontext.com" },
   "homepage": "https://opendata.smartcity.joinedcontext.com/en/connector",
-  "repository": "https://github.com/marek-mraz/joinedcontext-connector",
+  "repository": "https://github.com/joinedcontext/joinedcontext-connector",
   "license": "MIT",
   "keywords": ["open-data", "mcp", "smart-city", "air-quality", "transport"],
   "skills": "./skills/",
